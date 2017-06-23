@@ -1,10 +1,11 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
+//How to check whether given date is valid or not?
 public class DateValid {
 
 	/*
