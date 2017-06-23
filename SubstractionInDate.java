@@ -1,4 +1,4 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -7,6 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
+//How to subtract years, months, weeks and days from given date in Java?
 public class SubstractionInDate {
 
 public static final String NEW_DATE_PATTERN ="MMM. dd yyyy, EEEE";
