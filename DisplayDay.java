@@ -1,12 +1,12 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+//How to display day in different formats?
 public class DisplayDay {
 
-	
 public static void main(String[] args) {
 		
 		Date date=new Date();
