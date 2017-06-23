@@ -1,4 +1,4 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -10,7 +10,7 @@ import java.util.Scanner;
  * 
  * @author Rohit Agarwal
  * @category Date and Time
- * @problem Number of days between two dates
+ * @problem Number of days between two dates?
  *
  */
 public class DaysDifference {
