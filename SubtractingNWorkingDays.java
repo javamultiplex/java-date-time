@@ -1,4 +1,4 @@
-package com.blogspot.javamultiplex.datetime;
+package com.javamultiplex.datetime;
 
 import java.util.Calendar;
 import java.util.Scanner;
