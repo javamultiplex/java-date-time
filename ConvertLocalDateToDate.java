@@ -1,4 +1,4 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.time.Instant;
 import java.time.LocalDate;
