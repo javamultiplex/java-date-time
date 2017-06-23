@@ -1,4 +1,4 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -7,7 +7,7 @@ import java.util.Date;
  * 
  * @author Rohit Agarwal
  * @category Date and Time
- * @problem Convert Calendar to Date.
+ * @problem How to Convert Calendar to Date in Java?.
  *  
  */
 public class ConvertCalendarToDate {
