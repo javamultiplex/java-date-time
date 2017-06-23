@@ -1,4 +1,4 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Scanner;
 
+//How to find working and non-working days in given month?
 public class WorkingAndNonWorkingDays {
 
 	public static void main(String[] args) {
@@ -61,8 +62,7 @@ public class WorkingAndNonWorkingDays {
 				System.out.println("Working days : " + workingDays);
 				System.out.println("Non working days :" + nonWorkingDays);
 			} else {
-				System.out
-						.println("Month name should be valid and Year should be 4 digit long.");
+				System.out.println("Month name should be valid and Year should be 4 digit long.");
 			}
 		} finally {
 			if (input != null) {
