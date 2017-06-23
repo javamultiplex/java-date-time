@@ -1,4 +1,4 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -6,6 +6,7 @@ import java.time.ZonedDateTime;
 import java.util.Calendar;
 import java.util.Date;
 
+//How to print current date and time in Java?
 public class CurrentDateAndTime {
 
 	public static void main(String[] args) {
