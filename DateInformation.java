@@ -1,4 +1,4 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.util.Calendar;
 import java.util.Date;
