@@ -3,38 +3,52 @@ package date;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
 
-public class DateValid {
+public class YearsDifference {
 
-	/*
-	 * Date is valid if It's format is correct (For ex : dd/MM/yyyy) It exist in
-	 * reality, I mean 30/02/2016 is in correct format but there is not such
-	 * date in reality, So invalid.
-	 */
+	
 	public static void main(String[] args) {
 
 		Scanner input = null;
 		try {
 			input = new Scanner(System.in);
-			System.out.println("Enter date in dd/MM/yyyy format : ");
-			String date = input.next();
-			if (isDateValid(date)) {
-				System.out.println("Date is valid.");
+			System.out.println("Enter first date in dd/MM/yyyy format :");
+			String first = input.next();
+			System.out.println("Enter second date in dd/MM/yyyy format :");
+			String second = input.next();
+			// If Date is valid, converting String to date.
+			Date mydate1 = getValidDate(first);
+			Date mydate2 = getValidDate(second);
+			if (mydate1 != null && mydate2 != null) {
+				
+				//Creating Calendar class instance.
+				Calendar calendar1=Calendar.getInstance();
+				Calendar calendar2=Calendar.getInstance();
+				//Converting Date to Calendar.
+				calendar1.setTime(mydate1);
+				calendar2.setTime(mydate2);
+				int year1=calendar1.get(Calendar.YEAR);
+				int year2=calendar2.get(Calendar.YEAR);
+				int years=Math.abs(year1-year2);
+				System.out.println("Number of Years between two dates : "+years);
+				
 			} else {
-				System.out.println("Date is not valid.");
+				System.out.println("Dates are invalid.");
 			}
 		} finally {
 			if (input != null) {
 				input.close();
 			}
 		}
+
 	}
 
-	private static boolean isDateValid(String date) {
+	private static Date getValidDate(String date) {
 
-		boolean result = false;
-
+		Date mydate = null;
 		if (isValidDateFormat(date)) {
 			/*
 			 * d -> Day of month 
@@ -51,13 +65,12 @@ public class DateValid {
 			 */
 			dateFormat.setLenient(false);
 			try {
-				dateFormat.parse(date);
-				result = true;
+				mydate = dateFormat.parse(date);
 			} catch (ParseException e) {
-				result = false;
+				mydate = null;
 			}
 		}
-		return result;
+		return mydate;
 	}
 
 	private static boolean isValidDateFormat(String date) {
@@ -74,7 +87,8 @@ public class DateValid {
 			result = true;
 		}
 		return result;
-
 	}
 
+	
+	
 }

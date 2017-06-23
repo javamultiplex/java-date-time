@@ -1,4 +1,4 @@
-package com.blogspot.javamultiplex.datetime;
+package date;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -6,13 +6,6 @@ import java.time.ZonedDateTime;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * 
- * @author Rohit Agarwal
- * @category Date and Time
- * @problem How to print current date and time?
- *
- */
 public class CurrentDateAndTime {
 
 	public static void main(String[] args) {
@@ -27,10 +20,9 @@ public class CurrentDateAndTime {
 				+ calendar.getTime());
 
 		/*
-		 * Using Java 8 API classes. 
-		 * 1) LocalDate -> Print date 
-		 * 2) LocalDateTime -> Print date and Time 
-		 * 3) ZonedDateTime -> Print date, time and timezone
+		 * Using Java 8 API classes. 1) LocalDate -> Print date 2) LocalDateTime
+		 * -> Print date and Time 3) ZonedDateTime -> Print date, time and
+		 * timezone
 		 */
 
 		LocalDate localDate = LocalDate.now();

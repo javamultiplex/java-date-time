@@ -1,18 +1,10 @@
-package com.blogspot.javamultiplex.datetime;
+package date;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-
-/**
- * 
- * @author Rohit Agarwal
- * @category Date and Time Problems
- * @problem Number of days and weeks per month?
- *
- */
 public class NumberOfDaysAndWeekPerMonth {
 
 	public static void main(String[] args) {
@@ -39,9 +31,13 @@ public class NumberOfDaysAndWeekPerMonth {
 						} else {
 							days = 28;
 						}
-						System.out.println("Number of days in " + monthName	+ " " + year + " are : " + days);
+						System.out.println("Number of days in " + monthName
+								+ " " + year + " are : " + days);
 						weeksAndRemainingDays = getWeeksAndRemainingDays(days);
-						System.out.println("Number of weeks in " + monthName + " " + year + " are : "	+ weeksAndRemainingDays[0] + " Weeks + " + weeksAndRemainingDays[1] + " Day/s");
+						System.out.println("Number of weeks in " + monthName
+								+ " " + year + " are : "
+								+ weeksAndRemainingDays[0] + " Weeks + "
+								+ weeksAndRemainingDays[1] + " Day/s");
 					} else {
 						System.out.println("Year should be 4 digit long.");
 					}
@@ -49,9 +45,14 @@ public class NumberOfDaysAndWeekPerMonth {
 				} else {
 
 					days = getNumberofDaysByMonthName(monthName);
-					System.out.println("Number of days in " + monthName	+ " are : " + days);
+					System.out.println("Number of days in " + monthName
+							+ " are : " + days);
 					weeksAndRemainingDays = getWeeksAndRemainingDays(days);
-					System.out.println("Number of weeks in " + monthName	+ " are : " + weeksAndRemainingDays[0]	+ " Weeks + " + weeksAndRemainingDays[1] + " Day/s");
+					System.out
+							.println("Number of weeks in " + monthName
+									+ " are : " + weeksAndRemainingDays[0]
+									+ " Weeks + " + weeksAndRemainingDays[1]
+									+ " Day/s");
 
 				}
 			} else {

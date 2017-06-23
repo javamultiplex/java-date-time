@@ -1,6 +1,4 @@
-package com.blogspot.javamultiplex.datetime;
-
-
+package date;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,13 +6,6 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * 
- * @author Rohit Agarwal
- * @category Date and Time Problems
- * @problem Find working and non-working days in given month and year
- *
- */
 public class WorkingAndNonWorkingDays {
 
 	public static void main(String[] args) {
@@ -32,7 +23,8 @@ public class WorkingAndNonWorkingDays {
 			System.out.println("Enter Year (yyyy) : ");
 			year = input.next();
 			if (isValidMonth(monthName) && isValidYear(year)) {
-				dayAndMonthNumber = getNumberofDaysAndMonthNumberByMonthName(monthName, year);
+				dayAndMonthNumber = getNumberofDaysAndMonthNumberByMonthName(
+						monthName, year);
 				days = dayAndMonthNumber[0];
 				monthNumber = dayAndMonthNumber[1];
 				// Converting String to int.
@@ -59,7 +51,8 @@ public class WorkingAndNonWorkingDays {
 					 * cal.get(Calendar.DAY_OF_WEEK) = 1 (Sunday)
 					 * cal.get(Calendar.DAY_OF_WEEK) = 7 (Saturday)
 					 */
-					if (cal.get(Calendar.DAY_OF_WEEK) > 1 && cal.get(Calendar.DAY_OF_WEEK) < 7) {
+					if (cal.get(Calendar.DAY_OF_WEEK) > 1
+							&& cal.get(Calendar.DAY_OF_WEEK) < 7) {
 						workingDays++;
 					} else {
 						nonWorkingDays++;
@@ -68,7 +61,8 @@ public class WorkingAndNonWorkingDays {
 				System.out.println("Working days : " + workingDays);
 				System.out.println("Non working days :" + nonWorkingDays);
 			} else {
-				System.out.println("Month name should be valid and Year should be 4 digit long.");
+				System.out
+						.println("Month name should be valid and Year should be 4 digit long.");
 			}
 		} finally {
 			if (input != null) {
@@ -78,7 +72,8 @@ public class WorkingAndNonWorkingDays {
 
 	}
 
-	private static int[] getNumberofDaysAndMonthNumberByMonthName(String monthName, String year) {
+	private static int[] getNumberofDaysAndMonthNumberByMonthName(
+			String monthName, String year) {
 
 		int dayAndMonthNumber[] = new int[2];
 		int days = 0;
