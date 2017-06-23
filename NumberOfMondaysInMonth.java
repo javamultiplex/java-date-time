@@ -1,4 +1,4 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
+//How to find number of mondays in given month?
 public class NumberOfMondaysInMonth {
 
 	/*
