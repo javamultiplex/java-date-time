@@ -1,4 +1,4 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -11,7 +11,7 @@ import java.util.Scanner;
  * 
  * @author Rohit Agarwal
  * @category Date and Time
- * @problem Addition in given Date
+ * @problem How to add year, months, weeks and days to the given date in Java?
  *
  */
 public class AdditionInDate {
