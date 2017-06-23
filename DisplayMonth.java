@@ -1,9 +1,10 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+//How to display month in different formats?
 public class DisplayMonth {
 
 	public static void main(String[] args) {
