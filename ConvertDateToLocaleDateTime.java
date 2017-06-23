@@ -1,4 +1,4 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -9,7 +9,7 @@ import java.util.Date;
  * 
  * @author Rohit Agarwal
  * @category Date and Time
- * @problem How to convert Date to LocalDateTime
+ * @problem How to convert Date to LocalDateTime?
  *
  */
 public class ConvertDateToLocaleDateTime {
