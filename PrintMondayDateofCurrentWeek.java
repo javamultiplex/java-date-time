@@ -1,4 +1,4 @@
-package com.blogspot.javamultiplex.datetime;
+package com.javamultiplex.datetime;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
