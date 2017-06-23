@@ -1,9 +1,10 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
+//How to get timezone information in Java?
 public class TimeZoneInformation {
 
 	public static void main(String[] args) {
