@@ -1,7 +1,8 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.util.Scanner;
 
+//How to find all the leap years between two given years?
 public class LeapYearsBetweenYears {
 
 	
