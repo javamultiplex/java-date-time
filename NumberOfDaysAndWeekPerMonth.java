@@ -1,10 +1,11 @@
-package date;
+package com.javamultiplex.datetime;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+//How to find number of days and weeks per month?
 public class NumberOfDaysAndWeekPerMonth {
 
 	public static void main(String[] args) {
